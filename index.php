@@ -1,74 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>AI Backend Results</title>
-    <style>
-        .prediction {
-            margin-bottom: 20px;
-            justify-content: center;
-            text-align: center;
-        }
-    </style>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Icon -->
-    <link rel="shortcut icon" href="/assets/icon.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <center>
-        <h1 class="font-weight-bold text-uppercase">Aplikasi Prediksi <br> Tanaman Herbal</h1>
-    </center>
-    
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+    <div class="justify-center" >
+  <h1 class="text-3xl font-bold underline text-center mt-12">
+    Hello world!
+  </h1>
+  <br>
+  <form action="" method="post" enctype="multipart/form-data">
+  <div class="m-auto mt-12 relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+  <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+    <img
+    class="w-full"
+      src="./assets/hanjuang120.jpg"
 
-    <form action="" method="post" enctype="multipart/form-data">
-        <div class='container'>
-        <div class="card mx-auto col-md-5 col-8 mt-3 p-0">
-            <img class='mx-auto pic imgPreview'
-                src="assets/hanjuang120.jpg"/>
-            <div class="card-title d-flex px-4">
-                <p style="justify-content: center; align-items: center;" class="text-muted">Prediksi Tanaman Herbal</p>
-            </div>
-            <!-- <div class="card-body">
-                <p class="text-muted">Your payment details</p>
-                <div class="numbr mb-3">
-                    <i class=" col-1 fas fa-credit-card text-muted p-0"></i>
-                    <input class="col-10 p-0" type="text" placeholder="Card Number">
-                </div>
-                <div class="line2 col-lg-12 col-12 mb-4">
-                    <i class="col-1 far fa-calendar-minus text-muted p-0"></i>
-                    <input class="cal col-5 p-0" type="text" placeholder="MM/YY">
-                    <i class="col-1 fas fa-lock text-muted"></i>
-                    <input class="cvc col-5 p-0" type="text" placeholder="CVC">
-                </div>
-            </div> -->
-            <div class="footer text-center p-0">
-                <div class="col-lg-12 col-12 p-0">
-                    <!-- <p class="order">Prediksi</p> -->
-                    <button class="btn btn-success">
-                        <input type="file" name="image" accept="image/*" required>
-                    </button>
-                    <button class="btn btn-warning">
-                        <input type="submit" value="Predict">
-                    </button>
-                    
-                </div>
-            </div>
-        </div>
+      alt="img-blur-shadow"
+      layout="fill"
+    />
+  </div>
+  <div class="p-6">
+    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+     Jenis Tanaman Herbal
+    </h5>
+    <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+    Tanaman Herbal ......
+    </p>
+  </div> 
+  <label class="relative block p-2">
+     <input class=" block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan Foto...!!!" type="file" />
+</label>
 
-    </div>
-    </form>
-    
-    <!-- <form action="" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" required>
-        <input type="submit" value="Predict">
-    </form> -->
+  <div class="p-6 pt-0">
+    <button
+      class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      type="button"
+      data-ripple-light="true"
+    >
+      Submit
+    </button>
+  </div>
+  </div>
+</div>
+</form>
 
-    <?php
+<?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Mendapatkan data gambar
         $image = $_FILES['image'];
@@ -97,14 +77,30 @@
             $prediction = json_decode($result, true);
 
             // Menampilkan hasil prediksi
-            echo '<div class="prediction">';
-            echo '    <h2>Prediction Results</h2>';
-            echo '    <img class="imageHasil" src="data:image/jpeg;base64,' . $imageData . '" alt="Input Image" >';
-            echo '    <p><strong>Top Prediction:</strong> ' . $prediction['nama'] . '</p>';
-            echo '    <p><strong>Confidence:</strong> ' . $prediction['probability'] . '%</p>';
-            echo '</div>';
-        }
+            echo '<div class="m-auto mt-12 relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+              <img
+                src="data:image/jpeg;base64,' . $imageData . '"
+                class="w-full"
+                alt="img-blur-shadow"
+                layout="fill"
+              />
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+              ' . $prediction['nama'] . '
+              </h5>
+              <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+              ' . $prediction['probability'] . '%
+              </p>
+            </div> 
+            <label class="relative block p-2">
+               <input class=" block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Masukan Foto...!!!" type="file" />
+          </label>
+            </div>
+          </div>';
     }
+  }
     ?>
 </body>
 </html>
