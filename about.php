@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.20/dist/full.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-black">
     <div class="justify-center" >
 
 
@@ -53,11 +53,11 @@
             <div class="flex flex-wrap items-center ">
                 <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
                     <div class="lg:max-w-md">
-                        <span class="text-xl font-semibold text-blue-600 uppercase dark:text-blue-500">
+                        <span class="text-xl font-semibold uppercase text-black">
                             About Us</span>
                         <h2 class="mt-4 mb-6 text-2xl font-bold dark:text-gray-300">
                             We are the large business expert in Europe and Asia</h2>
-                        <p class="mb-10 text-gray-600 dark:text-gray-400 ">
+                        <p class="mb-10 text-black">
                             Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text .Lorem ipsum dor amet isopinus
                             ipaino amet Lorem ipsum dor amet is a dummy text</p>
                     </div>
@@ -78,7 +78,7 @@
                             <h2 class="mb-4 text-xl font-bold leading-tight dark:text-gray-300 md:text-2xl">
                                 Design
                             </h2>
-                            <p class="text-base leading-loose text-gray-500 dark:text-gray-400">
+                            <p class="text-base leading-loose text-black">
                                 Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text .Lorem ipsum dor amet isopinus
                                 ipaino
                             </p>
@@ -99,7 +99,7 @@
                             <h2 class="mb-4 text-xl font-bold leading-tight dark:text-gray-300 md:text-2xl">
                                 Strategy
                             </h2>
-                            <p class="text-base leading-loose text-gray-500 dark:text-gray-400">
+                            <p class="text-base leading-loose text-black">
                                 Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text .Lorem ipsum dor amet isopinus
                                 ipaino
                             </p>
@@ -119,7 +119,7 @@
                             <h2 class="mb-4 text-xl font-bold leading-tight dark:text-gray-300 md:text-2xl">
                                 Develop
                             </h2>
-                            <p class="text-base leading-loose text-gray-500 dark:text-gray-400">
+                            <p class="text-base leading-loose text-black">
                                 Lorem ipsum dor amet Lorem ipsum dor amet is a dummy text .Lorem ipsum dor amet isopinus
                                 ipaino
                             </p>
