@@ -46,7 +46,16 @@
   </div>
 </nav>
 
+
 <br><br><br>
+<div class="container">
+  <h2 class="text-black text-center m-auto mt-12 font-bold text-4xl">Panduan Aplikasi Herbal Ai</h2>
+  <div class="flex justify-center">
+  <div class="img-card">
+    <img class="w-8/12 rounded ml-12" src="./assets/panduan.png" alt="" srcset="">
+    </div>
+  </div>
+</div>
     
 
 <!--Footer container-->
